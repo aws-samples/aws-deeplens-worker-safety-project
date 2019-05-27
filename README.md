@@ -13,6 +13,12 @@ In this lab your will the following:
 
 ![](arch.png)
 
+Follow modules below and online course to learn how to build the app in 30 minutes.
+
+## Online Course 
+
+![https://www.aws.training/learningobject/wbc?id=32077](worker-safety-sc.png)
+
 ## Modules
 
 ### Setup IAM Role for Cloud Lambda
