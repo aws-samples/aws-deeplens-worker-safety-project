@@ -17,7 +17,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
 
 ## Online Course 
 
-![https://www.aws.training/learningobject/wbc?id=32077](worker-safety-sc.png)
+[![Online Course](worker-safety-sc.png)](https://www.aws.training/learningobject/wbc?id=32077)
 
 ## Modules
 
