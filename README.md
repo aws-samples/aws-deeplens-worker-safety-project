@@ -4,10 +4,10 @@ Use AWS DeepLens and Amazon Rekognition to build an application that helps ident
 
 ## Learning Objectives of This lab
 In this lab you will learn the following:
-- Create and deploy object detection project to DeepLens.
-- Modify the AWS DeepLens object detection inference lambda function to detect persons and upload frame to S3.
+- Create and deploy object detection project to AWS DeepLens.
+- Modify the AWS DeepLens object detection inference lambda function to detect persons and upload frame to Amazon S3.
 - Create a Lambda function to identify persons who are not wearing safety hats.
-- Analyze results using AWS IoT , Amazon CloudWatch and a web dashboard.
+- Analyze the results using AWS IoT , Amazon CloudWatch and a web dashboard.
 
 ## Architecture
 
