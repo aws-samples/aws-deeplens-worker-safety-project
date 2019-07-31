@@ -38,7 +38,7 @@ Follow the modules below or refer to the online course to learn how to build the
 8. Click Create role
 
 
-### Setup an IAM role for AWS DeepLens Lambda function
+### Setup an AWS IAM role for AWS DeepLens Lambda function
 
 1. Click create role
 2. Under AWS service, select Lambda and click Next: Permissions
