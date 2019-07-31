@@ -15,13 +15,13 @@ In this lab you will learn the following:
 
 Follow the modules below or refer to the online course to learn how to build the application in 30 minutes.
 
-## Online Course 
+## Online course 
 
 [![Online Course](worker-safety-sc.png)](https://www.aws.training/learningobject/wbc?id=32077)
 
 ## Modules
 
-### Setup IAM role for cloud Lambda function
+### Setup an IAM role for a cloud Lambda function
 
 1. Go to IAM in AWS Console at https://console.aws.amazon.com/iam
 2. Click on Roles
@@ -38,7 +38,7 @@ Follow the modules below or refer to the online course to learn how to build the
 8. Click Create role
 
 
-### Setup IAM role for AWS DeepLens Lambda function
+### Setup an IAM role for AWS DeepLens Lambda function
 
 1. Click create role
 2. Under AWS service, select Lambda and click Next: Permissions
@@ -50,7 +50,7 @@ Follow the modules below or refer to the online course to learn how to build the
 6. Click Create role
 
 
-### Create S3 bucket
+### Create an Amazon S3 bucket
 
 1. Go to Amazon S3 in AWS Console at https://s3.console.aws.amazon.com/s3/
 2. Click on Create bucket.
@@ -98,7 +98,7 @@ Follow the modules below or refer to the online course to learn how to build the
 * Click Add.
 * Click Save on the top right to save changed to Lambda function.
 
-### Create AWS DeepLens inference Lambda function
+### Create an AWS DeepLens inference Lambda function
 
 1. Go to Lambda in AWS Console at https://console.aws.amazon.com/lambda/.
 2. Click on Create function.
@@ -121,7 +121,7 @@ Follow the modules below or refer to the online course to learn how to build the
 2. Click on Actions, and then "Publish new version".
 3. For Version description enter: Detect person and push frame to S3 bucket. and click Publish.
 
-### Create a AWS DeepLens project
+### Create an AWS DeepLens project
 
 1. Using your browser, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
 2. Choose Projects, then choose Create new project.
