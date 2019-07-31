@@ -60,9 +60,9 @@ Follow the modules below or refer to the online course to learn how to build the
 * Choose US East (N. Virginia)
 * Click Next
 
-1. Leave default values for Configure Options screen and click Next
-2.  Under Set permissions, uncheck all the four checkboxes. NOTE: This step would allow us to make objects in your S3 bucket public. We are doing this to reduce a few steps in the module, but you should not do that for production workloads. Instead we recommended to use S3 Pre-Signed URLs to give time limited access to objects in S3.
-3. Click Next, and click Create bucket.
+4. Leave the default values for Configure Options screen and click Next
+5.  Under Set permissions, uncheck all the four checkboxes. NOTE: This step would allow us to make objects in your S3 bucket public. We are doing this to reduce a few steps in the module, but you should not do that for production workloads. Instead we recommended to use S3 Pre-Signed URLs to give time limited access to objects in S3.
+6. Click Next, and click Create bucket.
 
 ### Create a cloud Lambda function
 
