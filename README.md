@@ -1,19 +1,19 @@
-# Worker Safety with AWS DeepLens and Amazon Rekognition
+# Worker safety with AWS DeepLens and Amazon Rekognition
 
-Build worker safety app using AWS DeepLens and Amazon Rekognition.
+Use AWS DeepLens and Amazon Rekognition to build an application that helps identify if a person at a construction site is wearing the right safety gear, in this case, a hard hat. 
 
 ## Learning Objectives of This lab
-In this lab your will the following:
+In this lab you will learn the following:
 - Create and deploy object detection project to DeepLens.
-- Modify the DeepLens object detection inference lambda function to detect persons and upload frame to S3.
-- Create lambda function to identify persons who are not wearing safety hats.
-- Analyze results using IoT and CloudWatch and Web Dashboard.
+- Modify the AWS DeepLens object detection inference lambda function to detect persons and upload frame to S3.
+- Create a Lambda function to identify persons who are not wearing safety hats.
+- Analyze results using AWS IoT , Amazon CloudWatch and a web dashboard.
 
 ## Architecture
 
 ![](arch.png)
 
-Follow modules below and online course to learn how to build the app in 30 minutes.
+Follow the modules below or refer to the online course to learn how to build the application in 30 minutes.
 
 ## Online Course 
 
@@ -21,7 +21,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
 
 ## Modules
 
-### Setup IAM Role for Cloud Lambda
+### Setup IAM role for cloud Lambda function
 
 1. Go to IAM in AWS Console at https://console.aws.amazon.com/iam
 2. Click on Roles
@@ -38,7 +38,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
 8. Click Create role
 
 
-### Setup IAM Role for DeepLens Lambda
+### Setup IAM role for AWS DeepLens Lambda function
 
 1. Click create role
 2. Under AWS service, select Lambda and click Next: Permissions
@@ -64,7 +64,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
 2.  Under Set permissions, uncheck all four checkboxes. NOTE: This step would allow us to make objects in your S3 bucket public. We are doing this to reduce few steps in the module, but you should not do that for production workloads. Instead it is recommended to use S3 Pre-Signed URLs to give time limited access to objects in S3.
 3. Click Next, and click Create bucket.
 
-### Create Cloud Lambda
+### Create a cloud Lambda function
 
 1. Go to Lambda in AWS Console at https://console.aws.amazon.com/lambda/
 2. Click on Create function.
@@ -98,7 +98,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
 * Click Add.
 * Click Save on the top right to save changed to Lambda function.
 
-### Create DeepLens Inference Lambda Function
+### Create AWS DeepLens inference Lambda function
 
 1. Go to Lambda in AWS Console at https://console.aws.amazon.com/lambda/.
 2. Click on Create function.
@@ -121,7 +121,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
 2. Click on Actions, and then "Publish new version".
 3. For Version description enter: Detect person and push frame to S3 bucket. and click Publish.
 
-### Create DeepLens Project
+### Create a AWS DeepLens project
 
 1. Using your browser, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
 2. Choose Projects, then choose Create new project.
@@ -138,7 +138,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
         * Click on Add function, click on radio button for your lambda function (example: kashif-worker-safety-deeplens) lambda function and click Add function.
 * Click Create. This returns you to the Projects screen.
 
-### Deploy DeepLens Project
+### Deploy the project to AWS DeepLens 
 
 1. From DeepLens console, On the Projects screen, choose the radio button to the left of your project name, then choose Deploy to device.
 2. On the Target device screen, from the list of AWS DeepLens devices, choose the radio button to the left of the device where you want to deploy this project.
@@ -146,13 +146,13 @@ Follow modules below and online course to learn how to build the app in 30 minut
     If a project is already deployed to the device, you will see a warning message "There is an existing project on this device. Do you want to replace it? If you Deploy, AWS DeepLens will remove the current project before deploying the new project."
 4. On the Review and deploy screen, review your project and click Deploy to deploy the project. This will take you to to device screen, which shows the progress of your project deployment.
 
-### View Output in IoT
+### View output in AWS IoT
 
 1. Go to IoT Console at https://console.aws.amazon.com/iot/home
 2. Under Subscription topic enter topic name you entered as environment variable for Lambda in earlier step (example: worker-safety-demo-cloud) and click Subscribe to topic.
 3. You should now see JSON message with a list of people detected and whether they are wearing safety hats or not.
 
-### View Output in CloudWatch
+### View output in Amazon CloudWatch
 
 * Go to CloudWatch Console at https://console.aws.amazon.com/cloudwatch
 * Create a dashboard called “worker-safety-dashboard-your-name”
@@ -160,7 +160,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
 * Under Custom Namespaces, select “string”, “Metrics with no dimensions”, and then select PersonsWithSafetyHat and PersonsWithoutSafetyHat.
 * Next, set “Auto-refresh” to the smallest interval possible (1h), and change the “Period” to whatever works best for you (1 second or 5 seconds)
 
-### View Output in Web Dashboard
+### View output in web dashboard
 
 1. Go to AWS Cognito console at https://console.aws.amazon.com/cognito
 2. Click on Manage Identity Pools
@@ -191,7 +191,7 @@ Follow modules below and online course to learn how to build the app in 30 minut
 27. You should now see images coming from DeepLens with a green or red box around the person.
 
 
-## Clean Up
+## Clean up
 Delete Lambda functions, S3 bucket and IAM roles.
 
 ## License Summary
