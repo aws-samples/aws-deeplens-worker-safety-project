@@ -28,11 +28,11 @@ Follow the modules below or refer to the online course to learn how to build the
 3. Click create role
 4. Under AWS service, select Lambda and click Next: Permissions
 5. Under Attach permission policies
-    1. search S3 and select AmazonS3FullAccess
-    2. search Rekognition and select checkbox next to AmazonRekognitionReadOnlyAccess
-    3. search cloudwatch and select checkbox next to CloudWatchLogsFullAccess and CloudWatchFullAccess
-    4. search iot and select AWSIotDataAccess
-    5. search lambda and select checkbox next to AWSLambdaFullAccess
+    1. search for S3 and select AmazonS3FullAccess
+    2. search for Rekognition and select checkbox next to AmazonRekognitionReadOnlyAccess
+    3. search for cloudwatch and select checkbox next to CloudWatchLogsFullAccess and CloudWatchFullAccess
+    4. search for iot and select AWSIotDataAccess
+    5. search for lambda and select checkbox next to AWSLambdaFullAccess
 6. Click Next: Tags and Next: Review
 7. Name is “RecognizeObjectLambdaRole”
 8. Click Create role
