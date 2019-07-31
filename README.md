@@ -2,7 +2,7 @@
 
 Use AWS DeepLens and Amazon Rekognition to build an application that helps identify if a person at a construction site is wearing the right safety gear, in this case, a hard hat. 
 
-## Learning Objectives of This lab
+## Learning objectives of this lab
 In this lab you will learn the following:
 - Create and deploy object detection project to AWS DeepLens.
 - Modify the AWS DeepLens object detection inference lambda function to detect persons and upload frame to Amazon S3.
