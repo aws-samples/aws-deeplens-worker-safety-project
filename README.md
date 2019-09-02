@@ -49,6 +49,13 @@ Follow the modules below or refer to the online course to learn how to build the
 5. Name it “DeepLensInferenceLambdaRole”
 6. Click Create role
 
+### Update DeepLens AWSDeepLensGreengrassGroupRole IAM role for AWS DeepLens
+
+1. Go to AWS IAM in AWS Console at https://console.aws.amazon.com/iam
+2. Click on Roles
+3. Serach for AWSDeepLensGreengrassGroupRole and click on the Role name
+4. Under permissions, click on Attach Policies
+5. Search S3, select AmazonS3FullAccessand click Attach policy
 
 ### Create an Amazon S3 bucket
 
