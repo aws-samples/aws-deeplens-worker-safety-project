@@ -19,6 +19,8 @@ Follow the modules below or refer to the online course to learn how to build the
 
 [![Online Course](worker-safety-sc.png)](https://www.aws.training/learningobject/wbc?id=32077)
 
+https://www.aws.training/Details/eLearning?id=32077
+
 ## Modules
 
 ### Setup an AWS IAM role for a cloud Lambda function
