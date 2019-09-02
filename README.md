@@ -57,7 +57,7 @@ https://www.aws.training/Details/eLearning?id=32077
 2. Click on Roles
 3. Serach for AWSDeepLensGreengrassGroupRole and click on the Role name
 4. Under permissions, click on Attach Policies
-5. Search S3, select AmazonS3FullAccessand click Attach policy
+5. Search S3, select AmazonS3FullAccess and click Attach policy
 
 ### Create an Amazon S3 bucket
 
