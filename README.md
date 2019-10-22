@@ -91,12 +91,8 @@ https://www.aws.training/Details/eLearning?id=32077
 * Key: iot_topic
 * Value: worker-safety-demo-cloud
 
-1. Download [lambda.zip](./code/lambda.zip).
-2. Under Function code:
-
-* Code entry type: Upload a zip file
-* Under Function package, click Upload and select the zip file you downloaded in earlier step.
-* Click Save.
+1. Copy the code from [cloud-lambda.py](./code/cloud-lambda.py) and paste it under the Function code for the Lambda function. 
+2. Click Save.
 
 1. Under Add triggers, select S3.
 2. Under Configure triggers:
