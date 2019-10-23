@@ -110,7 +110,7 @@ def push_to_s3(img):
 
         encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), 90]
         _, jpg_data = cv2.imencode('.jpg', img, encode_param)
-        response = s3.put_object(ACL='public-read',
+        response = s3.put_object(ACL='private',
                                  Body=jpg_data.tostring(),
                                  Bucket=bucket_name,
                                  Key=key)
