@@ -70,8 +70,7 @@ https://www.aws.training/Details/eLearning?id=32077
 * Click Next
 
 4. Leave the default values for Configure Options screen and click Next
-5.  Under Set permissions, uncheck all the four checkboxes. NOTE: This step would allow us to make objects in your S3 bucket public. We are doing this to reduce a few steps in the module, but you should not do that for production workloads. Instead we recommended to use S3 Pre-Signed URLs to give time limited access to objects in S3.
-6. Click Next, and click Create bucket.
+5. Click Next, and click Create bucket.
 
 ### Create a cloud Lambda function
 
