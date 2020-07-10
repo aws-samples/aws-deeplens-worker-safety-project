@@ -106,12 +106,11 @@ https://www.aws.training/Details/eLearning?id=32077
 
 1. Go to AWS Lambda in AWS Console at https://console.aws.amazon.com/lambda/.
 2. Click on Create function.
-3. Under Create function, select Blueprints.
-4. Under Blueprints, type greengrass and hit enter to filter blueprint templates.
-5. Select greengrass-hello-world and click Configure.
-6. Under Basic information, provide the following details:
+3. Under Create function, select Author from scratch.
+4. Under Basic information, provide the following details:
 
 * Name: name-worker-safety-deeplens (example: kashif-worker-safety-deeplens)
+* Runtime: Python 3.7
 * Role: Choose and existing role
 * Existing role: DeepLensInferenceLambdaRole
 * Click Create function.
